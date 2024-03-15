@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>preactice set </title>
+    
+
+</head>
+
+<body>
+
+
+    <button class="add_to_bag "
+        onclick="  cartquant++;   document.querySelector('#cart-summ').innerText ='your bag has ' + cartquant+' items' ;  ">
+        Add to Bag </button>
+    <button class=" wishlist"
+        onclick=" cartquant--;document.querySelector('#cart-summ').innerText ='your bag has ' + cartquant+' items' ;">
+        Move to Wishlist</button>
+    <button class="add_to_bag "
+        onclick="cartquant+=2;document.querySelector('#cart-summ').innerText ='your bag has ' + cartquant+' items' ;">
+        Add 1+1 sale item </button>
+
+    <h1 id="cart-summ"></h1>
+
+
+
+
+    <script>
+        let cartquant = 0;
+        document.querySelector('#cart-summ').innerText = 'your bag has ' + cartquant + ' items' 
+     </script>
+
+</body>
+
+</html>
